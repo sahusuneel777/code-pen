@@ -6,8 +6,27 @@ body {
   background-color: hsl(225, 6%, 25%);
 }
 
+.heading{
+  font-family:  sans-serif;
+  background-color: hsl(225, 6%, 25%);
+  color:white;
+  padding-left: 10px;
+  margin: 0px;
+  padding-top: 10px;
+
+}
+
+.copyright{
+  text-align: center;
+  background-color: hsl(225, 6%, 25%);
+  color:white;
+  margin: 0;
+  font-family:  sans-serif;
+
+}
+
 .pane {
-  height: 50vh;
+  height: 45vh;
   display: flex;
 }
 
@@ -38,6 +57,7 @@ body {
 }
 
 .editor-title {
+  font-family:  sans-serif;
   display: flex;
   justify-content: space-between;
   background-color: hsl(225, 6%, 13%);

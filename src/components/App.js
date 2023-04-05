@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Editor from './Editor'
 import useLocalStorage from '../hooks/useLocalStorage'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
   const [html, setHtml] = useLocalStorage('html', '')
@@ -24,6 +27,7 @@ function App() {
 
   return (
     <>
+    <h1 className='heading'>Suneel's code-playground</h1>
       <div className="pane top-pane">
         <Editor
           language="xml"
@@ -54,6 +58,7 @@ function App() {
           height="100%"
         />
       </div>
+      <p className='copyright'><FontAwesomeIcon icon={faCopyright} /> CopyRight 2021 Suneel. All rights reserved</p>
     </>
   )
 }
